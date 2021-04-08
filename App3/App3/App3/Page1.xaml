@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".5*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height=".5*"></RowDefinition>
+            <RowDefinition Height=".2*"></RowDefinition>
+            
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".8*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width=".8*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width=".8*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width=".8*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ImageButton Source="portrait.png" Grid.Row="0" Grid.Column="6" BackgroundColor="#F3AD22" Margin="-3"/>
+        <ImageButton Source="list.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="#F3AD22" Margin="1"/>
+        <Line Grid.Row="1" Stroke="black"
+              X2="600" Grid.ColumnSpan="7"
+              StrokeDashArray="10,5"
+              StrokeDashOffset="6"></Line>
+        <Label Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="7" Text="我的課程" FontSize="32" HorizontalTextAlignment="Center" FontAttributes="Bold"></Label>
+        <Line Grid.Row="2" Stroke="black"
+              X2="600" Grid.ColumnSpan="7"
+              StrokeDashArray="10,5"
+              StrokeDashOffset="6"></Line>
+        <SearchBar Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Placeholder="搜尋課程..."></SearchBar>
+        <ListView SeparatorColor="#F79B15" Grid.Row="4" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="5">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Android app</x:String>
+                    <x:String>資料結構與演算法</x:String>
+                    <x:String>安全與衛生概論</x:String>
+                    <x:String>西洋哲學史</x:String>
+                    <x:String>管理資訊系統</x:String>
+
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+
+        <Line Grid.Row="8" Stroke="black"
+              X2="600" Grid.ColumnSpan="7"
+              StrokeDashArray="10,5"
+              StrokeDashOffset="6"></Line>
+        <ImageButton Source="add.png" Grid.Row="8" Grid.Column="1" Clicked="OpenNew" BackgroundColor="#F3AD22" Margin="5"/>
+        <ImageButton Source="scan.png" Grid.Row="8" Grid.Column="3" BackgroundColor="#F3AD22" Margin="5"/>
+        <ImageButton Source="chart.png" Grid.Row="8" Grid.Column="5" BackgroundColor="#F3AD22" Margin="5"/>
+        <Label Text="新增課程" Grid.Row="9" Grid.Column="1" FontSize="15" HorizontalTextAlignment="Center"/>
+        <Label Text="掃描" Grid.Row="9" Grid.Column="3" FontSize="15" HorizontalTextAlignment="Center"/>
+        <Label Text="掃描紀錄" Grid.Row="9" Grid.Column="5" FontSize="15" HorizontalTextAlignment="Center"/>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".5*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".5*"></RowDefinition>
+            <RowDefinition Height=".8*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>-->
+        <Image Source="p1.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="4" Margin="40" BackgroundColor="#F3AD22"/>
+        <Entry x:Name="UserID" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" ClearButtonVisibility="WhileEditing" Placeholder="Enter your account"/>
+        <Entry x:Name="UserPassword" IsPassword="true" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4" ClearButtonVisibility="WhileEditing" Placeholder="Enter your Password" />
+        <Button x:Name="label" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2"
+               Text="忘記密碼"
+               FontSize="15"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center" 
+                BorderWidth="0"
+                BackgroundColor="#0000ffff"
+                TextColor="#395687"/>
+        <Button Text="login" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" BackgroundColor="#F3B43F" CornerRadius="30" Clicked="LogClicked"/>
+        <Button Text="enroll" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2" FontSize="20" BackgroundColor="#F3B43F" CornerRadius="30" Clicked="EnrollClicked"/>
+        
+        
+
+
+
+
+    </Grid>
+
+</ContentPage>

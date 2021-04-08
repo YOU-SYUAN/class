@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp;assembly=SkiaSharp" 
+             xmlns:skiaforms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="App3.Page2">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Line Grid.Row="1" Stroke="black"
+              X2="600" Grid.ColumnSpan="6"
+              StrokeDashArray="10,5"
+              StrokeDashOffset="6"></Line>
+        <Label Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="6" Text="Welcome" FontSize="40" HorizontalTextAlignment="Center"></Label>
+        <Line Grid.Row="2" Stroke="black"
+              X2="600" Grid.ColumnSpan="6"
+              StrokeDashArray="10,5"
+              StrokeDashOffset="6"></Line>
+        <Entry x:Name="entryName" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" Placeholder="name" FontSize="20"/>
+        <Entry x:Name="Account" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4" Placeholder="id" FontSize="20"/>
+        <Entry x:Name="entryPassword" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" Placeholder="Password" FontSize="20"/>
+        <Button Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" CornerRadius="100" Text="註冊" FontSize="20" BackgroundColor="#F3B43F" Clicked="EnrollClicked"/>
+
+        <!--<Image Source="dog.png" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"/>-->
+    </Grid>
+</ContentPage>

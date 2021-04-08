@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page3">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+            <RowDefinition Height=".4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ImageButton Source="portrait.png" Grid.Row="0" Grid.Column="5" BackgroundColor="#F3AD22" Margin="-3"/>
+        <ImageButton Source="list.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="#F3AD22" Margin="1"/>
+        <Line Grid.Row="1" Stroke="black"
+              X2="600" Grid.ColumnSpan="6"
+              StrokeDashArray="10,5"
+              StrokeDashOffset="6"></Line>
+        <Label Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="6" Text="新增課程" FontSize="40" HorizontalTextAlignment="Center"></Label>
+        <Line Grid.Row="2" Stroke="black"
+              X2="600" Grid.ColumnSpan="6"
+              StrokeDashArray="10,5"
+              StrokeDashOffset="6"></Line>
+        <Entry Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" Placeholder="開課老師id" FontSize="20"/>
+        <Entry Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4" Placeholder="課程名稱" FontSize="20"/>
+        <Entry Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" Placeholder="開課時間" FontSize="20"/>
+        <Entry Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="4" Placeholder="課程內容簡介" FontSize="20"/>
+        <Button Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" CornerRadius="100" Text="新增" FontSize="20" BackgroundColor="#F3B43F"/>
+    </Grid>
+</ContentPage>
