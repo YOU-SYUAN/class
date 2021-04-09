@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{98FEE8C7-F58D-4574-9DCA-C4CE0D75F8F9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="App3/App3/session.cs">
+    <Files>
+      <File FileName="App3/App3/Page2.xaml" Line="35" Column="37" />
+      <File FileName="App3/App3/MainPage.xaml.cs" Line="14" Column="2" />
+      <File FileName="App3/App3/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="App3/App3/NewClassPage.xaml.cs" Line="14" Column="1" />
+      <File FileName="App3/App3/NewClassPage.xaml" Line="16" Column="33" />
+      <File FileName="App3/App3/teacherClassInfo.xaml.cs" Line="18" Column="10" />
+      <File FileName="App3/App3/teacherClassInfo.xaml" Line="22" Column="42" />
+      <File FileName="App3/App3/Page1.xaml" Line="29" Column="42" />
+      <File FileName="App3/App3/Page1.xaml.cs" Line="10" Column="15" />
+      <File FileName="../../../.nuget/packages/xam.plugins.settings/3.1.1/readme.txt" Line="16" Column="23" />
+      <File FileName="App3/App3/session.cs" Line="6" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="App3" expanded="True">
+            <Node name="App3" expanded="True">
+              <Node name="NewClassPage.xaml" expanded="True" />
+              <Node name="session.cs" selected="True" />
+              <Node name="teacherClassInfo.xaml" expanded="True" />
+            </Node>
+            <Node name="App3.Android" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.App3.Android PreferredExecutionTarget="Android.pixel_2_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

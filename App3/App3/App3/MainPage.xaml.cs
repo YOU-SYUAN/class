@@ -15,8 +15,9 @@ namespace App3
         public MainPage()
         {
             InitializeComponent();
-
         }
+
+
         private async void EnrollClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Page2());
@@ -45,6 +46,7 @@ namespace App3
                 if (dejson.ans == "yes")
                 {
                     await DisplayAlert("Logged in", "登入成功", "Go");
+                    App3.session.DisplayUserId = UserID.Text;
                     await Navigation.PushAsync(new Page1());
                 }
                 else

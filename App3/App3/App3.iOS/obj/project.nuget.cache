@@ -1,16 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "BiD/aQJPMl/Rf1KlEOAKMj8HT5aeVKuWogB6k0SJ2KoRC5GqmnYBHm9QIKEy/R8MzENkl0xeT59Wm2DYIsHJKA==",
+  "dgSpecHash": "1AhtVult3R96leEboolr70Ecy3AHPsZ86vM61bPIKLIHDG1dxRgyaf/HXsg5e7Z59d97SBAvsC3DO905q6afUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3.iOS\\App3.iOS.csproj",
+  "projectFilePath": "/Users/changchenyu/Projects/class/App3/App3/App3.iOS/App3.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ASUS\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\skiasharp\\2.80.2\\skiasharp.2.80.2.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\skiasharp.views\\2.80.2\\skiasharp.views.2.80.2.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\skiasharp.views.forms\\2.80.2\\skiasharp.views.forms.2.80.2.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "/Users/changchenyu/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/changchenyu/.nuget/packages/skiasharp/2.80.2/skiasharp.2.80.2.nupkg.sha512",
+    "/Users/changchenyu/.nuget/packages/skiasharp.views/2.80.2/skiasharp.views.2.80.2.nupkg.sha512",
+    "/Users/changchenyu/.nuget/packages/skiasharp.views.forms/2.80.2/skiasharp.views.forms.2.80.2.nupkg.sha512",
+    "/Users/changchenyu/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/changchenyu/.nuget/packages/xam.plugins.settings/3.1.1/xam.plugins.settings.3.1.1.nupkg.sha512",
+    "/Users/changchenyu/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/changchenyu/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "/Users/changchenyu/.nuget/packages/zxing.net.mobile/2.4.1/zxing.net.mobile.2.4.1.nupkg.sha512",
+    "/Users/changchenyu/.nuget/packages/zxing.net.mobile.forms/2.4.1/zxing.net.mobile.forms.2.4.1.nupkg.sha512"
   ],
   "logs": []
 }

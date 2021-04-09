@@ -1,41 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3.iOS\\App3.iOS.csproj": {}
+    "/Users/changchenyu/Projects/class/App3/App3/App3.iOS/App3.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3.iOS\\App3.iOS.csproj": {
+    "/Users/changchenyu/Projects/class/App3/App3/App3.iOS/App3.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3.iOS\\App3.iOS.csproj",
+        "projectUniqueName": "/Users/changchenyu/Projects/class/App3/App3/App3.iOS/App3.iOS.csproj",
         "projectName": "App3.iOS",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3.iOS\\App3.iOS.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3.iOS\\obj\\",
+        "projectPath": "/Users/changchenyu/Projects/class/App3/App3/App3.iOS/App3.iOS.csproj",
+        "packagesPath": "/Users/changchenyu/.nuget/packages/",
+        "outputPath": "/Users/changchenyu/Projects/class/App3/App3/App3.iOS/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/changchenyu/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3\\App3.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3\\App3.csproj"
+              "/Users/changchenyu/Projects/class/App3/App3/App3/App3.csproj": {
+                "projectPath": "/Users/changchenyu/Projects/class/App3/App3/App3/App3.csproj"
               }
             }
           }
@@ -56,6 +48,10 @@
               "target": "Package",
               "version": "[2.80.2, )"
             },
+            "Xam.Plugins.Settings": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -63,6 +59,14 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2012, )"
+            },
+            "ZXing.Net.Mobile": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "ZXing.Net.Mobile.Forms": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           }
         }
@@ -79,30 +83,22 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3\\App3.csproj": {
+    "/Users/changchenyu/Projects/class/App3/App3/App3/App3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3\\App3.csproj",
+        "projectUniqueName": "/Users/changchenyu/Projects/class/App3/App3/App3/App3.csproj",
         "projectName": "App3",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3\\App3.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\App3\\App3\\App3\\obj\\",
+        "projectPath": "/Users/changchenyu/Projects/class/App3/App3/App3/App3.csproj",
+        "packagesPath": "/Users/changchenyu/.nuget/packages/",
+        "outputPath": "/Users/changchenyu/Projects/class/App3/App3/App3/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/changchenyu/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -139,6 +135,10 @@
               "target": "Package",
               "version": "[2.80.2, )"
             },
+            "Xam.Plugins.Settings": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -146,6 +146,14 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2012, )"
+            },
+            "ZXing.Net.Mobile": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "ZXing.Net.Mobile.Forms": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [
@@ -158,7 +166,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
