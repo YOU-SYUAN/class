@@ -11,7 +11,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="100"/>
             
         </Grid.RowDefinitions>
@@ -37,10 +37,11 @@
             </zxing:ZXingBarcodeImageView.BarcodeOptions>
         </zxing:ZXingBarcodeImageView>
 
-        <Label Text="課程名稱：" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" TextColor="#ffb037"/>
-        <Label Text="課程內容：" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" TextColor="#ffb037"/>
-        <Label Text="開課人：" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" TextColor="#ffb037"/>
-        <Label Text="開課時間：" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" TextColor="#ffb037"/>
+        <Label x:Name="name" Text="課程名稱：" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" TextColor="#ffb037"/>
+        <Label x:Name="content" Text="課程內容：" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" TextColor="#ffb037"/>
+        <Label x:Name="teacher" Text="開課人：" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" TextColor="#ffb037"/>
+        <Label x:Name="startTime" Text="開始時間：" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" TextColor="#ffb037"/>
+        <Label x:Name="endTime"  Text="結束時間：" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2" FontSize="20" TextColor="#ffb037"/>
 
 
         <ImageButton Source="add.png" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#ffb037" Padding="15" />
