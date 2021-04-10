@@ -18,17 +18,18 @@ namespace App3
         // 建立物件類別
         public class SendData
         {
-            public string Uid { get; set; }
-            public string Cname { get; set; }
-            public string Ccontent { get; set; }
-            public string Starttime { get; set; }
-            public string Endtime { get; set; }
-            public string QRsting { get; set; }
+            public string id { get; set; }
+            public string courseName { get; set; }
+            public string courseContent { get; set; }
+            public string starttime { get; set; }
+            public string endtime { get; set; }
+            public string totalHours { get; set; }
+            public string QrString { get; set; }
         }
         // 接收回PHP傳值的類別
         public class PHPresult
         {
-            public string ans { get; set; }
+            public string result { get; set; }
         }
 
         public void AddClass(object sender, EventArgs e)
@@ -36,6 +37,14 @@ namespace App3
             string uID = App3.session.DisplayUserId;
             string cName = classname.Text;
             string cContent = classcontent.Text;
+            Console.WriteLine(startDatePicker.Date);
+            // 計算天數
+            TimeSpan timeSpan = endDatePicker.Date - startDatePicker.Date;
+            // 計算時數
+            TimeSpan hours = endTimePicker.Time - startTimePicker.Time;
+            // 將天數x24 + 時數 = 總時數
+            int Totalhours2 = (Int32.Parse(timeSpan.Days.ToString()) * 24) + Int32.Parse(hours.Hours.ToString());
+            string Totalhours = Totalhours2.ToString(); // 總時數轉成字串
             string startTime = startDatePicker.Date.ToString("yyyy/MM/dd") +"-"+startTimePicker.Time.ToString();
             string endTime = endDatePicker.Date.ToString("yyyy/MM/dd") + "-"+endTimePicker.Time.ToString();
 
@@ -53,12 +62,13 @@ namespace App3
             //建立物件
             SendData sendData = new SendData
             {
-                Uid = uID,
-                Cname = cName,
-                Ccontent = cContent,
-                Starttime = startTime,
-                Endtime = endTime,
-                QRsting = qrString
+                id = uID,
+                courseName = cName,
+                courseContent = cContent,
+                starttime = startTime,
+                endtime = endTime,
+                totalHours = Totalhours,
+                QrString = qrString
             };
 
             // 物件序列化
@@ -78,7 +88,7 @@ namespace App3
                     try
                     {
                         // 目標php檔
-                        string FooUrl = $"https://transfood.000webhostapp.com/transfood_ci/login.php";
+                        string FooUrl = $"https://qrcodeapi.000webhostapp.com/addcourseApi.php";
                         HttpResponseMessage response = null;
 
                         //設定相關網址內容
@@ -101,8 +111,8 @@ namespace App3
                         // 反序列化
                         PHPresult yesORno = JsonConvert.DeserializeObject<PHPresult>(strResult);
 
-                        Console.WriteLine("result = " + yesORno.ans);
-                        if (yesORno.ans == "yes")
+                        Console.WriteLine("result = " + yesORno.result);
+                        if (yesORno.result == "yes")
                         {
                             Console.WriteLine("successsuccesssuccesssuccesssuccess");
                             return;

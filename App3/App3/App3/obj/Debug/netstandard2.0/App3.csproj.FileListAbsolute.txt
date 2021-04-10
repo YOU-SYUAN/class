@@ -34,3 +34,4 @@ C:/Users/ASUS/source/repos/App3/App3/App3/obj/Debug/netstandard2.0/Page3.xaml.g.
 /Users/changchenyu/Projects/class/App3/App3/App3/obj/Debug/netstandard2.0/App3.pdb
 /Users/changchenyu/Projects/class/App3/App3/App3/obj/Debug/netstandard2.0/NewClassPage.xaml.g.cs
 /Users/changchenyu/Projects/class/App3/App3/App3/obj/Debug/netstandard2.0/teacherClassInfo.xaml.g.cs
+/Users/changchenyu/Projects/class/App3/App3/App3/obj/Debug/netstandard2.0/QRcodeScanner.xaml.g.cs
