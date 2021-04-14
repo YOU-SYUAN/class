@@ -12,7 +12,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
             
         </Grid.RowDefinitions>
 
@@ -42,10 +43,8 @@
         <Label x:Name="teacher" Text="開課人：" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" TextColor="#ffb037"/>
         <Label x:Name="startTime" Text="開始時間：" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" TextColor="#ffb037"/>
         <Label x:Name="endTime"  Text="結束時間：" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2" FontSize="20" TextColor="#ffb037"/>
+        <Button x:Name="gotoPage1" Text="回主畫面" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" BackgroundColor="#ffb037" TextColor="White" Clicked="gotoPage"/>
 
 
-        <ImageButton Source="add.png" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#ffb037" Padding="15" />
-        <ImageButton Source="scan.png" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" BackgroundColor="#ffb037" Padding="15" />
-        <ImageButton Source="chart.png" Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="2" BackgroundColor="#ffb037" Padding="5" />
     </Grid>
 </ContentPage>

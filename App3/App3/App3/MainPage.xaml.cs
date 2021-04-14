@@ -37,7 +37,7 @@ namespace App3
                 var content = new StringContent("[" + json + "]");
                 //AlertMessage.Text += content;
                 HttpClient client = new HttpClient();
-                HttpResponseMessage result = await client.PostAsync("https://transfood.000webhostapp.com/transfood_ci/login.php", content);
+                HttpResponseMessage result = await client.PostAsync("https://qrcodeapi.000webhostapp.com/login.php", content);
                 //AlertMessage.Text += result;
                 var responseString = await result.Content.ReadAsStringAsync();
                 //將json轉回物件

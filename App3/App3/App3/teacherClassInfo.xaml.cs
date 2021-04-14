@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Net.Http;
 using System.Text;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Xamarin.Forms;
 
 namespace App3
@@ -15,26 +17,27 @@ namespace App3
             SendCid();
         }
 
+
         // 建立物件類別
         public class SendData
         {
-            public string Cid { get; set; }
+            public int Cid { get; set; }
             public bool Is_teacher { get; set; }
         }
         // 接收回PHP傳值的類別
         public class PHPresult
         {
-            public string Cname { get; set; }
-            public string Ccontent { get; set; }
-            public string Teacher { get; set; }
-            public string Starttime { get; set; }
-            public string Endtime { get; set; }
-            public string QRsting { get; set; }
+            public string tname { get; set; }
+            public string courseContent { get; set; }
+            public string courseName { get; set; }
+            public string startTime { get; set; }
+            public string endTime { get; set; }
+            public string cQrcode { get; set; }
         }
 
         public void SendCid()
         {
-            string ClassId = "1234";
+            int ClassId = 1;
             bool is_teacher = true;
 
             // 建立物件
@@ -61,7 +64,7 @@ namespace App3
                     try
                     {
                         // 目標php檔
-                        string FooUrl = $"https://transfood.000webhostapp.com/transfood_ci/login.php";
+                        string FooUrl = $"https://qrcodeapi.000webhostapp.com/course_detail.php";
                         HttpResponseMessage response = null;
 
                         //設定相關網址內容
@@ -82,12 +85,18 @@ namespace App3
                         string strResult = await response.Content.ReadAsStringAsync();
                         Console.WriteLine("strResult = " + strResult);
                         // 反序列化
-                        PHPresult classInfo = JsonConvert.DeserializeObject<PHPresult>(strResult);
+                        //PHPresult classInfo = JsonConvert.DeserializeObject<PHPresult>(strResult);
+                        JArray array = JsonConvert.DeserializeObject<JArray>(strResult);
+                        Console.WriteLine(array[0]);
+                        // 從list轉乘object
+                        JObject obj = (JObject)array[0];
+                        Console.WriteLine(obj);
 
-                        Console.WriteLine("result = " + classInfo);
-                        if (classInfo != null)
+                        Console.WriteLine("==========="+ obj["tName"].ToString());
+
+                        if (array != null)
                         {
-                            DispalyToPage(classInfo);
+                            DispalyToPage(obj);
                             return;
                         }
                         else
@@ -105,14 +114,20 @@ namespace App3
         }
 
         // 顯示到使用者頁面
-        private void DispalyToPage(PHPresult classInfo)
+        private void DispalyToPage(JObject obj)
         {
-            value.BarcodeValue = classInfo.QRsting;
-            name.Text = name.Text + classInfo.Cname;
-            content.Text = content.Text + classInfo.Ccontent;
-            teacher.Text = teacher.Text + classInfo.Teacher;
-            startTime.Text = startTime.Text + classInfo.Starttime;
-            endTime.Text = endTime.Text + classInfo.Endtime;
+            value.BarcodeValue = obj["cQrcode"].ToString();
+            name.Text = name.Text + obj["courseName"].ToString();
+            content.Text = content.Text + obj["courseContent"].ToString();
+            teacher.Text = teacher.Text + obj["tName"].ToString();
+            startTime.Text = startTime.Text + obj["startTime"].ToString();
+            endTime.Text = endTime.Text + obj["endTime"].ToString();
+        }
+
+        // 回主畫面
+        private async void gotoPage(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
         }
     }
 }

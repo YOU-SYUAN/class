@@ -23,7 +23,7 @@ namespace App3
             public string courseContent { get; set; }
             public string starttime { get; set; }
             public string endtime { get; set; }
-            public string totalHours { get; set; }
+            public int totalHours { get; set; }
             public string QrString { get; set; }
         }
         // 接收回PHP傳值的類別
@@ -43,8 +43,7 @@ namespace App3
             // 計算時數
             TimeSpan hours = endTimePicker.Time - startTimePicker.Time;
             // 將天數x24 + 時數 = 總時數
-            int Totalhours2 = (Int32.Parse(timeSpan.Days.ToString()) * 24) + Int32.Parse(hours.Hours.ToString());
-            string Totalhours = Totalhours2.ToString(); // 總時數轉成字串
+            int Totalhours = (Int32.Parse(timeSpan.Days.ToString()) * 24) + Int32.Parse(hours.Hours.ToString());
             string startTime = startDatePicker.Date.ToString("yyyy/MM/dd") +"-"+startTimePicker.Time.ToString();
             string endTime = endDatePicker.Date.ToString("yyyy/MM/dd") + "-"+endTimePicker.Time.ToString();
 
@@ -115,11 +114,14 @@ namespace App3
                         if (yesORno.result == "yes")
                         {
                             Console.WriteLine("successsuccesssuccesssuccesssuccess");
+                            await DisplayAlert("完成", "新增課程成功", "ok");
+                            await Navigation.PopAsync();
                             return;
                         }
                         else
                         {
                             Console.WriteLine("failfailfailfailfailfailfailfailfail");
+                            await DisplayAlert("失敗", "新增課程失敗", "ok");
                             return;
                         }
                     }
