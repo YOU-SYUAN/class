@@ -1684,32 +1684,42 @@
     ]
   },
   "packageFolders": {
-    "/Users/changchenyu/.nuget/packages/": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/changchenyu/Projects/class/App3/App3/App3.iOS/App3.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\class\\App3\\App3\\App3.iOS\\App3.iOS.csproj",
       "projectName": "App3.iOS",
-      "projectPath": "/Users/changchenyu/Projects/class/App3/App3/App3.iOS/App3.iOS.csproj",
-      "packagesPath": "/Users/changchenyu/.nuget/packages/",
-      "outputPath": "/Users/changchenyu/Projects/class/App3/App3/App3.iOS/obj/",
+      "projectPath": "C:\\Users\\ASUS\\source\\repos\\class\\App3\\App3\\App3.iOS\\App3.iOS.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\source\\repos\\class\\App3\\App3\\App3.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/changchenyu/.config/NuGet/NuGet.Config"
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/changchenyu/Projects/class/App3/App3/App3/App3.csproj": {
-              "projectPath": "/Users/changchenyu/Projects/class/App3/App3/App3/App3.csproj"
+            "C:\\Users\\ASUS\\source\\repos\\class\\App3\\App3\\App3\\App3.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\source\\repos\\class\\App3\\App3\\App3\\App3.csproj"
             }
           }
         }

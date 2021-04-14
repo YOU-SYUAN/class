@@ -27,7 +27,7 @@
             <ColumnDefinition Width=".8*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <ImageButton Source="portrait.png" Grid.Row="0" Grid.Column="6" BackgroundColor="#F3AD22" Margin="-3"/>
-        <ImageButton Source="list.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="#F3AD22" Margin="1"/>
+        <ImageButton Source="list.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="#F3AD22" Margin="1" Clicked="SearchCourse"/>
         <Line Grid.Row="1" Stroke="black"
               X2="600" Grid.ColumnSpan="7"
               StrokeDashArray="10,5"
@@ -37,19 +37,10 @@
               X2="600" Grid.ColumnSpan="7"
               StrokeDashArray="10,5"
               StrokeDashOffset="6"></Line>
-        <SearchBar Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Placeholder="搜尋課程..."></SearchBar>
-        <ListView SeparatorColor="#F79B15" Grid.Row="4" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="5">
-            <ListView.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Android app</x:String>
-                    <x:String>資料結構與演算法</x:String>
-                    <x:String>安全與衛生概論</x:String>
-                    <x:String>西洋哲學史</x:String>
-                    <x:String>管理資訊系統</x:String>
+        <Label x:Name="results" Grid.Row="3" Grid.RowSpan="5" Grid.Column="1" Grid.ColumnSpan="4" />
+        <!--<ListView SeparatorColor="#F79B15" Grid.Row="4" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="5">
 
-                </x:Array>
-            </ListView.ItemsSource>
-        </ListView>
+        </ListView>-->
 
         <Line Grid.Row="8" Stroke="black"
               X2="600" Grid.ColumnSpan="7"
